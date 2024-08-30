@@ -1,7 +1,10 @@
 # i created a Game in which Computer choose random number if u gues its number u winn else u lose(u have 5 lives!)
 from random import random,randint
-pcnumber = randint(1,10)
-print("Correct answer: (if you choose it u won):",pcnumber,"\n")
+print("Select number more than 5 !")
+user_choosing_diapason_num1 = int(input("Enter starting: "))
+user_choosing_diapason_num2 = int(input("Enter ending: "))
+pcnumber = randint(user_choosing_diapason_num1,user_choosing_diapason_num2)
+print("Correct answer: (if you choose it u win):",pcnumber,"\n")
 lives = 0
 tries = 1
 while lives <= 4:
